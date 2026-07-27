@@ -1,76 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siva Prabhu V - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siva Prabhu V — Embedded Systems Engineer</title>
+<meta name="description" content="Siva Prabhu V — Embedded Systems Trainer & Firmware Engineer. Microcontrollers, RTOS, and real-time hardware interfacing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="scripts.js" defer></script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="assets/photo.jpg" alt="Siva Prabhu V" class="profile-pic">
-            <h1>Siva Prabhu V</h1>
-            <p>Embedded Systems Trainer | Embedded Software Engineer</p>
-            <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="https://github.com/sibhu-88" target="_blank">GitHub</a></li>
-                </ul>
-            </nav>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAV ============ -->
+<header class="topbar">
+  <div class="rail">
+    <a href="#top" class="brand">
+      <span class="brand-pad" aria-hidden="true"></span>
+      SP<span class="brand-dim">.V</span>
+    </a>
+    <nav class="pinrow" id="pinrow">
+      <a href="#about"><span class="pin"></span>About</a>
+      <a href="#skills"><span class="pin"></span>Skills</a>
+      <a href="#projects"><span class="pin"></span>Projects</a>
+      <a href="#contact"><span class="pin"></span>Contact</a>
+      <a href="https://github.com/sibhu-88" target="_blank" rel="noopener" class="pin-external"><span class="pin"></span>GitHub ↗</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="id-badge">
+        <img src="assets/photo.jpg" alt="Siva Prabhu V">
+      </div>
+      <p class="eyebrow"><span class="blink">■</span> // EMBEDDED&nbsp;SYSTEMS&nbsp;ENGINEER · CHENNAI, IN</p>
+      <h1 class="hero-name">Siva Prabhu&nbsp;V</h1>
+      <p class="hero-role">Embedded Systems Trainer &amp; Firmware Engineer — I take real-time systems from datasheet to deployed board.</p>
+
+      <svg class="waveform" viewBox="0 0 640 90" preserveAspectRatio="none" aria-hidden="true">
+        <path class="waveform-grid" d="M0 45 H640 M0 15 H640 M0 75 H640" />
+        <path class="waveform-path" d="M0,45 L40,45 L60,10 L80,80 L100,45 L160,45 L180,20 L200,70 L220,45 L300,45 L315,45 L330,15 L345,75 L360,45 L420,45 L440,25 L460,65 L480,45 L640,45" />
+      </svg>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+
+      <dl class="hero-specs">
+        <div><dt>Focus</dt><dd>Firmware · RTOS · Hardware Interfacing</dd></div>
+        <div><dt>Training</dt><dd>Microcontrollers, live cohorts</dd></div>
+        <div><dt>Status</dt><dd><span class="dot dot-live"></span>Open to collaboration</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <div class="trace-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about reveal">
+    <div class="rail">
+      <p class="section-tag">01 · DATASHEET</p>
+      <h2>About</h2>
+      <div class="about-grid">
+        <p class="about-copy">
+          I design, build, and teach real-time embedded systems — from bare-metal firmware on ARM7 and 8051 cores
+          to communication stacks that get sensors, controllers, and displays talking to each other reliably.
+          Today I work as an <strong>Embedded Systems Trainer</strong>, taking students and working engineers from
+          "what's a microcontroller" to shipping firmware that survives contact with real hardware.
+        </p>
+        <ul class="spec-list">
+          <li><span class="spec-key">Education</span><span class="spec-val">B.E, Electronics &amp; Instrumentation Engineering — St. Joseph's College of Engineering</span></li>
+          <li><span class="spec-key">Role</span><span class="spec-val">Embedded Systems Trainer — microcontrollers &amp; embedded software</span></li>
+          <li><span class="spec-key">Core skill</span><span class="spec-val">Firmware development, RTOS, hardware communication protocols</span></li>
+          <li><span class="spec-key">Off the clock</span><span class="spec-val">Basketball — teamwork and strategy carry over</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="trace-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section skills reveal">
+    <div class="rail">
+      <p class="section-tag">02 · COMPONENTS</p>
+      <h2>Skills &amp; Tools</h2>
+
+      <div class="chip-group">
+        <h3 class="chip-heading">Languages</h3>
+        <div class="chips">
+          <span class="chip">C</span>
+          <span class="chip">C++</span>
+          <span class="chip">Embedded C</span>
+          <span class="chip">Python</span>
         </div>
-    </header>
-    <main>
-        <section id="about" class="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>Passionate Embedded Systems Trainer & Engineer with expertise in designing, developing, and troubleshooting embedded systems. Adept at microcontroller programming, communication protocols, and real-time system development.</p>
-            </div>
-        </section>
-        <section id="skills" class="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <ul>
-                    <li>C, C++, Embedded C</li>
-                    <li>ARM7 (LPC2129), 8051, ESP8266</li>
-                    <li>CAN, I2C, UART, SPI, RS232</li>
-                    <li>Linux, RTOS, TCP/IP</li>
-                    <li>Keil, Flash Magic, ISP, Proteus, CAPL</li>
-                </ul>
-            </div>
-        </section>
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2>Projects</h2>
-                <ul>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/Body-Control-Module" target="_blank">Body Control Module (BCM) in Automobiles</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/Multilevel-Security-System" target="_blank">Multilevel Security System</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/STUDENTS_DATABASE" target="_blank">Student Database Management</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/INBUILD_RTC_ARM" target="_blank">Inbuilt RTC with Temperature Reading using SPI</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/Game/snakesAndLadders.c" target="_blank">Snakes and Ladders</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/Game/Number_Guessing.c" target="_blank">Number Guessing Game</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/Game/Tic_Tac_Toe.c" target="_blank">Tic Tac Toe</a></li>
-                    <li><a href="https://github.com/sibhu-88/Projects/tree/main/Game/Rock_Paper_Scissors.c" target="_blank">Rock Paper Scissors</a></li>
-                </ul>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <p>Email: <a href="mailto:imsivaprabhu08@gmail.com">imsivaprabhu08@gmail.com</a></p>
-                <p>LinkedIn: <a href="https://www.linkedin.com/in/sivaprabhu-v/" target="_blank">sivaprabhu-v</a></p>
-                <p>GitHub: <a href="https://github.com/sibhu-88" target="_blank">sibhu-88</a></p>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Siva Prabhu V. All Rights Reserved.</p>
+      </div>
+
+      <div class="chip-group">
+        <h3 class="chip-heading">Microcontrollers</h3>
+        <div class="chips">
+          <span class="chip">ARM7 · LPC2129</span>
+          <span class="chip">8051</span>
+          <span class="chip">ESP8266</span>
         </div>
-    </footer>
+      </div>
+
+      <div class="chip-group">
+        <h3 class="chip-heading">Communication Protocols</h3>
+        <div class="chips">
+          <span class="chip">CAN</span>
+          <span class="chip">I2C</span>
+          <span class="chip">UART</span>
+          <span class="chip">SPI</span>
+          <span class="chip">RS232</span>
+        </div>
+      </div>
+
+      <div class="chip-group">
+        <h3 class="chip-heading">Systems &amp; Tools</h3>
+        <div class="chips">
+          <span class="chip">Linux</span>
+          <span class="chip">RTOS</span>
+          <span class="chip">TCP/IP</span>
+          <span class="chip">Keil µVision</span>
+          <span class="chip">Flash Magic</span>
+          <span class="chip">ISP</span>
+          <span class="chip">Proteus</span>
+          <span class="chip">CAPL</span>
+          <span class="chip">Git</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trace-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section projects reveal">
+    <div class="rail">
+      <p class="section-tag">03 · BUILD LOG</p>
+      <h2>Projects</h2>
+
+      <div class="card-grid">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="dot dot-live" title="Complete"></span>
+            <span class="card-rev">REV A</span>
+          </div>
+          <h3>Body Control Module (BCM)</h3>
+          <p>Automotive body control firmware handling lighting, locking and accessory logic over an in-vehicle communication bus.</p>
+          <div class="chips chips-sm">
+            <span class="chip">C</span><span class="chip">CAN</span><span class="chip">Automotive</span>
+          </div>
+          <a href="https://github.com/sibhu-88/Projects/tree/main/Body-Control-Module" target="_blank" rel="noopener" class="card-link">View source ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="dot dot-live" title="Complete"></span>
+            <span class="card-rev">REV A</span>
+          </div>
+          <h3>Multilevel Security System</h3>
+          <p>Layered access-control system combining multiple authentication stages before granting entry.</p>
+          <div class="chips chips-sm">
+            <span class="chip">C</span><span class="chip">Security</span>
+          </div>
+          <a href="https://github.com/sibhu-88/Projects/tree/main/Multilevel-Security-System" target="_blank" rel="noopener" class="card-link">View source ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="dot dot-live" title="Complete"></span>
+            <span class="card-rev">REV A</span>
+          </div>
+          <h3>Student Database Management</h3>
+          <p>Embedded record-keeping system for storing and retrieving student data on constrained hardware.</p>
+          <div class="chips chips-sm">
+            <span class="chip">C</span><span class="chip">Data storage</span>
+          </div>
+          <a href="https://github.com/sibhu-88/Projects/tree/main/STUDENTS_DATABASE" target="_blank" rel="noopener" class="card-link">View source ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="dot dot-live" title="Complete"></span>
+            <span class="card-rev">REV A</span>
+          </div>
+          <h3>RTC + Temperature over SPI</h3>
+          <p>On-chip real-time clock paired with temperature sensing, read out over an SPI bus on ARM7.</p>
+          <div class="chips chips-sm">
+            <span class="chip">ARM7</span><span class="chip">SPI</span><span class="chip">Sensors</span>
+          </div>
+          <a href="https://github.com/sibhu-88/Projects/tree/main/INBUILD_RTC_ARM" target="_blank" rel="noopener" class="card-link">View source ↗</a>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="dot dot-progress" title="In progress"></span>
+            <span class="card-rev">REV B</span>
+          </div>
+          <h3>RFID Secure Database</h3>
+          <p>RFID-based access system backed by a secure database — active work in progress.</p>
+          <div class="chips chips-sm">
+            <span class="chip">RFID</span><span class="chip">Security</span>
+          </div>
+          <a href="https://github.com/sibhu-88/practice/tree/main/RFID_SDB" target="_blank" rel="noopener" class="card-link">View source ↗</a>
+        </article>
+
+      </div>
+
+      <div class="mini-builds">
+        <h3 class="chip-heading">Mini builds — C fundamentals</h3>
+        <div class="chips">
+          <a class="chip chip-link" href="https://github.com/sibhu-88/Projects/tree/main/Game/snakesAndLadders.c" target="_blank" rel="noopener">Snakes &amp; Ladders ↗</a>
+          <a class="chip chip-link" href="https://github.com/sibhu-88/Projects/tree/main/Game/Number_Guessing.c" target="_blank" rel="noopener">Number Guessing ↗</a>
+          <a class="chip chip-link" href="https://github.com/sibhu-88/Projects/tree/main/Game/Tic_Tac_Toe.c" target="_blank" rel="noopener">Tic Tac Toe ↗</a>
+          <a class="chip chip-link" href="https://github.com/sibhu-88/Projects/tree/main/Game/Rock_Paper_Scissors.c" target="_blank" rel="noopener">Rock Paper Scissors ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trace-divider" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact reveal">
+    <div class="rail">
+      <p class="section-tag">04 · CONNECTOR</p>
+      <h2>Get in Touch</h2>
+      <p class="contact-lede">Training request, project collaboration, or just talking embedded systems — reach out on any pad below.</p>
+
+      <div class="pad-grid">
+        <a class="pad" href="mailto:imsivaprabhu08@gmail.com">
+          <span class="pad-label">Email</span>
+          <span class="pad-value">imsivaprabhu08@gmail.com</span>
+        </a>
+        <a class="pad" href="https://www.linkedin.com/in/sivaprabhu-v/" target="_blank" rel="noopener">
+          <span class="pad-label">LinkedIn</span>
+          <span class="pad-value">/in/sivaprabhu-v</span>
+        </a>
+        <a class="pad" href="https://github.com/sibhu-88" target="_blank" rel="noopener">
+          <span class="pad-label">GitHub</span>
+          <span class="pad-value">@sibhu-88</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="silkscreen">
+  <div class="rail">
+    <p>© <span id="year"></span> Siva Prabhu V · Assembled in Chennai, India</p>
+    <p class="silkscreen-rev">BOARD REV 2.0</p>
+  </div>
+</footer>
+
 </body>
 </html>
